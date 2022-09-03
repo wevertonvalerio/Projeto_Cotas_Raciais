@@ -40,34 +40,32 @@
         </nav>
     </header>
 
-    <main class="container d-flex justify-content-center">
+    <main class="container d-flex justify-content-center pb-5">
 
-      <form class="d-flex align-items-center  flex-column">
+      <form class="flex-column">
         <div class="mb-3">
-          <label for="exampleInputText" class="form-label">Nome</label>
+          <label for="exampleInputText" class="form-text">Nome <img src="../imgs/icons8-pessoa.png" alt="pessoa"></label>
           <input type="text" class="form-control" id="exampleInputtText">
-          <!-- <div id="textHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <label for="exampleInputEmail1" class="form-text">E-mail <img src="../imgs/icons8-enviar.png" alt="email"></label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
         <div class="mb-3">
-          <label for="exampleInputTel" class="form-label">Telefone</label>
+          <label for="exampleInputTel" class="form-text">Telefone <img src="../imgs/icons8-adicionar-telefone.png" alt="telefone"></label>
           <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp">
-          <!-- <div id="telHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
         <div class="mb-3">
-          <label for="exampleInputText" class="form-label">CPF</label>
+          <label for="exampleInputText" class="form-text">CPF <img src="../imgs/icons8-edição-de-gramática.png" alt="doc"></label>
           <input type="text" class="form-control" id="exampleInputtText">
-          <!-- <div id="textHelp" class="form-text">We'll never share your email with anyone else.</div> -->
         </div>
-        <label for="exampleInputText" class="form-label">Mensagem</label>
-        <input type="text" class="form-control" id="exampleInputtText">
-        <!-- <div id="textHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-      </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-4">
+          <label for="exampleFormControlMensagem" class="form-text">Mensagem <img src="../imgs/icons8-editar-mensagem.png" alt="mensagem"></label>
+          <textarea class="form-control" id="exampleFormControlMensagem" rows="3"></textarea>
+        </div>
+        <div class="d-flex justify-content-center"> 
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
       </form>
 
     </main>
