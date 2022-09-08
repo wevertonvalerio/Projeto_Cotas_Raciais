@@ -42,10 +42,11 @@
 
     <main class="container d-flex justify-content-center pb-5">
 
-      <form class="flex-column">
+      <form class="flex-column" action="./cadastrar.html" onsubmit="return validarCampo()">
         <div class="mb-3">
           <label for="exampleInputText" class="form-text">Nome <img src="../imgs/icons8-pessoa.png" alt="pessoa"></label>
-          <input type="text" class="form-control" id="exampleInputtText">
+          <input type="text" class="form-control" id="InputNome">
+          <div><span id="msgErro"></span></div>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-text">E-mail <img src="../imgs/icons8-enviar.png" alt="email"></label>
@@ -83,5 +84,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="../js/cadastrar.js"></script>
   </body>
 </html>
