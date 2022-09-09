@@ -7,14 +7,10 @@
 }
 
 body{
-    background-color: #eecd8fad;    
+    background-color: rgba(202, 135, 10, 0.61); 
 }
 
 .ajusteA:hover, .selected{
-    background-color: #BC6E01;
+    background-color: #995900;
     border-radius: 10px;
-}
-
-footer{
-    background-color: rgba(148, 84, 12, 0.685);
 }
