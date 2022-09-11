@@ -40,46 +40,50 @@
         </nav>
     </header>
 
-    <main class="container d-flex justify-content-center pb-5">
+    <main class="d-flex justify-content-center pb-5">
 
-      <form class="flex-column" action="./cadastrar.html" onsubmit="return validarCampo()">
+      <div class="container px-5">
 
-        <!-- campo Nome -->
-        <div class="mb-3">
-          <label for="exampleInputText" class="form-text">Nome <img src="../imgs/icons8-pessoa.png" alt="pessoa"></label>
-          <input type="text" class="form-control corCampo" id="inputNome">
-          <div class="text-danger ms-4"><span id="msgErroNome"></span></div>
-        </div>
-        <!-- Campo Email -->
-        <div class="mb-3">
-          <label for="exampleInputEmail" class="form-text">E-mail <img src="../imgs/icons8-enviar.png" alt="email"></label>
-          <input type="email" class="form-control corCampo" id="inputEmail" aria-describedby="emailHelp">
-          <div class="text-danger ms-4"><span id="msgErroEmail"></span></div>
-        </div>
-        <!-- Campo Telefone -->
-        <div class="mb-3">
-          <label for="exampleInputTel" class="form-text">Telefone <img src="../imgs/icons8-adicionar-telefone.png" alt="telefone"></label>
-          <input type="tel" class="form-control corCampo" id="inputTel" aria-describedby="telHelp">
-          <div class="text-danger ms-4"><span id="msgErroTel"></span></div>
-        </div>
-        <!-- Campo CPF -->
-        <div class="mb-3">
-          <label for="exampleInputText" class="form-text">CPF <img src="../imgs/icons8-edição-de-gramática.png" alt="doc"></label>
-          <input type="text" class="form-control corCampo" id="inputCPF">
-          <div class="text-danger ms-4"><span id="msgErroCPF"></span></div>
-        </div>
-        <!-- Campo Mensagem -->
-        <div class="mb-4">
-          <label for="exampleFormControlMensagem" class="form-text">Mensagem <img src="../imgs/icons8-editar-mensagem.png" alt="mensagem"></label>
-          <textarea class="form-control corCampo" id="inputSms" rows="3"></textarea>
-          <div class="text-danger ms-4"><span id="msgErroSms"></span></div>
-        </div>
-        <!-- Botão Enviar -->
-        <div class="d-flex justify-content-center"> 
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
+        <form class="flex-column" action="./cadastrar.html" onsubmit="return validarCampo()">
 
-      </form>
+          <!-- campo Nome -->
+          <div class="mb-3">
+            <label for="exampleInputText" class="form-text">Nome <img src="../imgs/icons8-pessoa.png" alt="pessoa"></label>
+            <input type="text" class="form-control corCampo" id="inputNome" placeholder="Andre">
+            <div class="text-danger ms-4"><span id="msgErroNome"></span></div>
+          </div>
+          <!-- Campo Email -->
+          <div class="mb-3">
+            <label for="exampleInputEmail" class="form-text">E-mail <img src="../imgs/icons8-enviar.png" alt="email"></label>
+            <input type="text" class="form-control corCampo" id="inputEmail" aria-describedby="emailHelp"  placeholder="andre@gmail.com">
+            <div class="text-danger ms-4"><span id="msgErroEmail"></span></div>
+          </div>
+          <!-- Campo Telefone -->
+          <div class="mb-3">
+            <label for="exampleInputTel" class="form-text">Telefone <img src="../imgs/icons8-adicionar-telefone.png" alt="telefone"></label>
+            <input type="tel" class="form-control corCampo" id="inputTel" aria-describedby="telHelp" placeholder="(DDD) 9999-9999">
+            <div class="text-danger ms-4"><span id="msgErroTel"></span></div>
+          </div>
+          <!-- Campo CPF -->
+          <div class="mb-3">
+            <label for="exampleInputText" class="form-text">CPF <img src="../imgs/icons8-edição-de-gramática.png" alt="doc"></label>
+            <input type="text" class="form-control corCampo" id="inputCPF" placeholder="apenas numeros">
+            <div class="text-danger ms-4"><span id="msgErroCPF"></span></div>
+          </div>
+          <!-- Campo Mensagem -->
+          <div class="mb-4">
+            <label for="exampleFormControlMensagem" class="form-text">Mensagem <img src="../imgs/icons8-editar-mensagem.png" alt="mensagem"></label>
+            <textarea class="form-control corCampo" id="inputSms" rows="3" placeholder="Mande algo para nós ;)"></textarea>
+            <div class="text-danger ms-4"><span id="msgErroSms"></span></div>
+          </div>
+          <!-- Botão Enviar -->
+          <div class="d-flex justify-content-center"> 
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+  
+        </form>
+
+      </div>
 
     </main>
 

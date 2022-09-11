@@ -16,7 +16,7 @@ function validarCampo(){
         return false
     }
 
-    //Campo Email -> ele esta pegando as validações de ponto do html padrão
+    //Campo Email
 
     let email = document.querySelector("#inputEmail");
 
@@ -26,6 +26,16 @@ function validarCampo(){
 
     if (email.value.trim() == ""){
         msgErroEmail.innerHTML = "Favor preencher o campo Email <br>";
+        email.focus();
+        return false
+    }
+    if(!email.value.includes('@')){
+        msgErroEmail.innerHTML = "Esse email não tem o @ <br>";
+        email.focus();
+        return false
+    }
+    if(!email.value.includes('.com')){
+        msgErroEmail.innerHTML = "Esse email não tem .com  <br>";
         email.focus();
         return false
     }
@@ -40,6 +50,16 @@ function validarCampo(){
 
     if (tel.value.trim() == ""){
         msgErroTel.innerHTML = "Favor preencher o campo Telefone <br>";
+        tel.focus();
+        return false
+    }
+    if(!tel.value.includes('(')){
+        msgErroTel.innerHTML = "Tente colocar : ( <br>";
+        tel.focus();
+        return false
+    }
+    if(!tel.value.includes(')')){
+        msgErroTel.innerHTML = "Tente colocar : ) <br>";
         tel.focus();
         return false
     }
@@ -59,6 +79,11 @@ function validarCampo(){
     }
     if(CPF.value.length < 11){
         msgErroCPF.innerHTML = "Favor preencher o campo CPF <br>";
+        CPF.focus();
+        return false
+    }
+    if(CPF.value.length > 11){
+        msgErroCPF.innerHTML = "CPF tem apenas 11 números <br>";
         CPF.focus();
         return false
     }
