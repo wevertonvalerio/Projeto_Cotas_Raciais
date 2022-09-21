@@ -1,3 +1,8 @@
+$(function() {
+    $("#inputTel").mask('(00) 00000-0000');
+    $("#inputCPF").mask('000.000.000-00');
+});
+
 function validarCampo(){
     // Campo Nome
     let nome = document.querySelector("#inputNome");
@@ -6,7 +11,7 @@ function validarCampo(){
     msgErroNome.innerHTML = "";
 
     if (nome.value.trim() == ""){
-        msgErroNome.innerHTML = "Favor preencher o campo nome <br>";
+        msgErroNome.innerHTML = "O campo nome está vazio :(<br>";
         nome.focus();
         return false
     }
@@ -25,7 +30,7 @@ function validarCampo(){
     msgErroEmail.innerHTML = "";
 
     if (email.value.trim() == ""){
-        msgErroEmail.innerHTML = "Favor preencher o campo Email <br>";
+        msgErroEmail.innerHTML = "O campo Email está vazio :( <br>";
         email.focus();
         return false
     }
@@ -49,17 +54,7 @@ function validarCampo(){
     msgErroTel.innerHTML = "";
 
     if (tel.value.trim() == ""){
-        msgErroTel.innerHTML = "Favor preencher o campo Telefone <br>";
-        tel.focus();
-        return false
-    }
-    if(!tel.value.includes('(')){
-        msgErroTel.innerHTML = "Tente colocar : ( <br>";
-        tel.focus();
-        return false
-    }
-    if(!tel.value.includes(')')){
-        msgErroTel.innerHTML = "Tente colocar : ) <br>";
+        msgErroTel.innerHTML = "O campo Telefone está vazio :( <br>";
         tel.focus();
         return false
     }
@@ -73,17 +68,12 @@ function validarCampo(){
     msgErroCPF.innerHTML = "";
 
     if (CPF.value.trim() == ""){
-        msgErroCPF.innerHTML = "Favor preencher o campo CPF <br>";
+        msgErroCPF.innerHTML = "O campo CPF está vazio :( <br>";
         CPF.focus();
         return false
     }
-    if(CPF.value.length < 11){
+    if(CPF.value.length < 14){
         msgErroCPF.innerHTML = "Favor preencher o campo CPF <br>";
-        CPF.focus();
-        return false
-    }
-    if(CPF.value.length > 11){
-        msgErroCPF.innerHTML = "CPF tem apenas 11 números <br>";
         CPF.focus();
         return false
     }

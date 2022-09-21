@@ -14,3 +14,10 @@ body{
     background-color: #995900;
     border-radius: 10px;
 }
+p a {
+    text-decoration: none;
+    color: inherit;
+}
+p a:hover{
+    color:#E8A30C;
+}
