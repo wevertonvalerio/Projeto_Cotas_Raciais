@@ -7,11 +7,13 @@
 }
 
 body{
-    background-color: rgba(202, 135, 10, 0.61); 
+    /* background-color: rgba(202, 135, 10, 0.61);  */
+    background-color: rgb(235, 194, 144);
+    /* background-color: rgb(245, 211, 169); */
 }
 
 .ajusteA:hover, .selected{
-    background-color: #995900;
+    background-color: #995900;  
     border-radius: 10px;
 }
 p a {

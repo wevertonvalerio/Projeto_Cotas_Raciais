@@ -68,6 +68,7 @@ function validarCampo(){
     msgErroCPF.innerHTML = "";
 
     if (CPF.value.trim() == ""){
+        msgErroCPF.style.border = '3px solid red';
         msgErroCPF.innerHTML = "O campo CPF está vazio :( <br>";
         CPF.focus();
         return false
