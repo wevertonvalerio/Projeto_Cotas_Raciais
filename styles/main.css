@@ -7,9 +7,7 @@
 }
 
 body{
-    /* background-color: rgba(202, 135, 10, 0.61);  */
-    background-color: rgb(235, 194, 144);
-    /* background-color: rgb(245, 211, 169); */
+    background-color: rgb(243, 203, 154);
 }
 
 .ajusteA:hover, .selected{
@@ -22,4 +20,8 @@ p a {
 }
 p a:hover{
     color:#E8A30C;
+}
+
+footer{
+    background-color: rgb(233, 188, 134);
 }

@@ -7,9 +7,7 @@ ul :nth-child(5) a {
 }
 
 .corCampo{
-    /* background-color: #eecd8f !important; */
-    /* background-color: rgb(235, 194, 144) !important; */
-    background-color: rgb(245, 211, 169) !important;
+    background-color: rgb(255, 223, 187) !important;
     
 }
 
