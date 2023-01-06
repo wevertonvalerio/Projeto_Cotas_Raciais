@@ -1,0 +1,35 @@
+ul :nth-child(1n-1) a{
+    color: rgba(0, 0, 0, 0.459) ;
+}
+
+ul :nth-child(5) a {
+    color:#d69200;
+}
+
+.corCampo{
+    /* background-color: #eecd8f !important; */
+    /* background-color: rgb(235, 194, 144) !important; */
+    background-color: rgb(245, 211, 169) !important;
+    
+}
+
+/* .form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}  */

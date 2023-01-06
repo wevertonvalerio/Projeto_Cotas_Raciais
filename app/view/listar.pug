@@ -1,0 +1,44 @@
+extends layout
+
+block links
+  link(href='../public/styles/listar.css', rel='stylesheet')
+
+block title
+  title=`Lista de Comentários`
+
+block main
+    main
+      if (listaCompleta && listaCompleta.length > 0)
+        h1.title Lista de Comentários
+        table.table
+          thead
+            tr
+              th.subtitle ID
+              th.subtitle Nome
+              th.subtitle E-mail 
+              th.subtitle Tel/Whats
+              th.subtitle CPF
+              th.subtitle Mensagem
+              th.subtitle Alterar
+              th.subtitle(scope='col') Excluir
+          tbody
+            each row in listaCompleta 
+              tr
+                th=row.codigo
+                td=row.nome
+                td=row.email
+                td=row.telwhats
+                td=row.cpf
+                td=row.mensagem
+                td
+                  a(href=`/solicita-editar/${row.codigo}`)
+                    img.icones(src='../public/imgs/troca.png')
+                td
+                  a(href=`/excluir/${row.codigo}`, onclick=`confirmarExclusao(${row.codigo})`)
+                    img.icones(src='../public/imgs/excluir.png')
+
+      else 
+        h1.title="Sem comentarios :("
+    
+    block scripts 
+      script(src='../public/js/listar.js')

@@ -1,0 +1,59 @@
+extends layout 
+
+block links
+  link(rel='stylesheet' href='../public/styles/cadastrar.css')
+block title 
+  title Cadastrar
+
+block main
+  main.d-flex.justify-content-center.pb-5
+    .container.px-5
+      form.flex-column(name="dataForm", action="/inserir" method="POST" onsubmit='return validarCampo()')
+        // campo Nome
+        .mb-3
+          label.form-text(for='exampleInputText')
+            | Nome 
+            img(src='../public/imgs/icons8-pessoa.png' alt='pessoa')
+          input#inputNome.form-control.corCampo(type='text' name="nome", placeholder='Andre')
+          .text-danger.ms-4
+            span#msgErroNome
+        // Campo Email
+        .mb-3
+          label.form-text(for='exampleInputEmail')
+            | E-mail 
+            img(src='../public/imgs/icons8-enviar.png' alt='email')
+          input#inputEmail.form-control.corCampo(type='text' name="email", placeholder='andre@gmail.com')
+          .text-danger.ms-4
+            span#msgErroEmail
+        // Campo Telefone
+        .mb-3
+          label.form-text(for='exampleInputTel')
+            | Telefone 
+            img(src='../public/imgs/icons8-adicionar-telefone.png' alt='telefone')
+          input#inputTel.form-control.corCampo(type='text' name="telWhats" placeholder='(DDD) 9999-9999')
+          .text-danger.ms-4
+            span#msgErroTel
+        // Campo CPF
+        .mb-3
+          label.form-text(for='exampleInputText')
+            | CPF 
+            img(src='../public/imgs/icons8-edição-de-gramática.png' alt='doc')
+          input#inputCPF.form-control.corCampo(type='text' name="cpf" placeholder='apenas numeros')
+          .text-danger.ms-4
+            span#msgErroCPF
+        // Campo Mensagem
+        .mb-4
+          label.form-text(for='exampleFormControlMensagem')
+            | Mensagem 
+            img(src='../public/imgs/icons8-editar-mensagem.png' alt='mensagem')
+          input#inputSms.form-control.corCampo(name="mensagem" placeholder='Mande algo para nós ;)')
+          .text-danger.ms-4
+            span#msgErroSms
+        // Botão Enviar
+        .d-flex.justify-content-center
+          a(href='/listar')
+            button.btn.btn-primary(type='submit') Enviar
+
+
+block scripts
+  script(src='../public/js/cadastrar.js')

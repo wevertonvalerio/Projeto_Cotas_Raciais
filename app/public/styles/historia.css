@@ -1,0 +1,24 @@
+ul :nth-child(1n-1) a{
+    color: rgba(0, 0, 0, 0.459) ;
+}
+
+ul :nth-child(2) a {
+    color:#d69200;
+}
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.castasimg{
+    width: 25%;
+ 
+    border-radius: 30px
+}
+.escadaimg{
+    width: 35%;
+    border-radius: 30px
+}
