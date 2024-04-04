@@ -1,4 +1,4 @@
-Criação de um WebSite na Matéria de Desenvolvimento Web. As ferramentas utilizadas foram HTML, CSS, JAVASCRIPT, NODEJS, PUG, BOOTSTRAP.
+Criação de um WebSite na Matéria de Desenvolvimento Web. As ferramentas utilizadas foram CSS, JAVASCRIPT, NODEJS, PUG, BOOTSTRAP.
 
 
 
